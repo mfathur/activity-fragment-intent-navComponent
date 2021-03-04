@@ -42,6 +42,12 @@ class SecondActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * fungsi-fungsi dibawah ini di override agar bisa tahu activity sedang berada di state mana
+     *
+     * untuk melihatnya run aplikasi nya terus lihat log cat bagian debug
+     */
+
     override fun onStart() {
         super.onStart()
         Log.d("SecondActivity", "onStart ")
