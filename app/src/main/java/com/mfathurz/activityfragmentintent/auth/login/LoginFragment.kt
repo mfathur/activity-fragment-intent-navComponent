@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.mfathurz.activityfragmentintent.LoginFragmentDirections
 import com.mfathurz.activityfragmentintent.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
