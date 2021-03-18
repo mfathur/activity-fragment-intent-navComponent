@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.mfathurz.activityfragmentintent.R
 
-
 class SignUpFragment : Fragment() {
 
     override fun onCreateView(

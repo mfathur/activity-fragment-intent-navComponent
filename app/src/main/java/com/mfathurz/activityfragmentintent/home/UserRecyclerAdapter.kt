@@ -9,8 +9,13 @@ import com.mfathurz.activityfragmentintent.R
 import com.mfathurz.activityfragmentintent.core.domain.User
 import com.mfathurz.activityfragmentintent.databinding.ItemUserRecyclerViewBinding
 
-class UserRecyclerAdapter(private val users: List<User>) :
+class UserRecyclerAdapter(private val users: ArrayList<User>) :
     RecyclerView.Adapter<UserRecyclerAdapter.UserViewHolder>() {
+
+    fun addData(list : List<User>){
+        users.addAll(list)
+        notifyDataSetChanged()
+    }
 
     inner class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ItemUserRecyclerViewBinding.bind(itemView)
